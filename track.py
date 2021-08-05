@@ -31,7 +31,7 @@ while(cap.isOpened()):
     mask = cv2.inRange(hsv,low,high)
     filtered = cv2.GaussianBlur(mask,(5,5),5)
     cv2.imshow('img',img)
-    cv2.imshow('q', mask)
+    cv2.imshow('Mask', mask)
     cv2.imshow('Filter',filtered)
     if cv2.waitKey(25) % 0xFF==ord('q'):
         break
