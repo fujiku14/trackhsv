@@ -2,13 +2,7 @@ import cv2
 import numpy as np
 import imutils
 
-def nothing(x):
-    pass
-
-
-
 cv2.namedWindow('track')
-
 cv2.createTrackbar('lowh','track',22,180,nothing)
 cv2.createTrackbar('lows','track',108,255,nothing)
 cv2.createTrackbar('lowv','track',125,255,nothing)
